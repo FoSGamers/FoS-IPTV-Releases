@@ -1,0 +1,8 @@
+release-assets/
+*.zip
+*.dmg
+*.exe
+*.AppImage
+*.deb
+*.rpm
+*.blockmap
