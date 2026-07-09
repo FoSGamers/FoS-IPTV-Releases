@@ -1,6 +1,12 @@
 # FoS IPTV
 
-FoS IPTV is a free desktop IPTV player for people who already have their own legal IPTV playlist or Xtream-compatible provider account.
+FoS IPTV v0.1.0 is currently an unsigned macOS test build.
+
+This release is for early testers only. macOS may show a warning such as:
+
+"FoS IPTV" is damaged and can't be opened. You should move it to the Trash.
+
+That warning usually happens because this early build is not Apple Developer ID signed or notarized yet.
 
 FoS IPTV does not include channels, movies, TV shows, playlists, subscriptions, provider access, usernames, passwords, or IPTV credentials.
 
@@ -9,23 +15,44 @@ You must provide your own legal IPTV source.
 ## Download and install
 
 1. Go to the Releases page.
-2. Download the release file for your operating system.
-3. Extract or unzip it if needed.
-4. Open FoS IPTV.
+2. Download FoS-IPTV-v0.1.0-mac-arm64.zip.
+3. Unzip it.
+4. Try opening FoS IPTV.app.
 
-## macOS unsigned-app note
+## macOS unsigned test build fix
 
-This early build may be unsigned.
+If macOS says the app is damaged, run this in Terminal after unzipping the app:
 
-If macOS blocks the app:
+xattr -dr com.apple.quarantine "$HOME/Downloads/FoS IPTV.app"
+open "$HOME/Downloads/FoS IPTV.app"
 
-1. Open Finder.
-2. Find FoS IPTV.app.
-3. Right-click the app.
-4. Choose Open.
-5. Confirm that you want to open it.
+If you moved the app to Applications, run:
 
-You usually only need to do this once.
+xattr -dr com.apple.quarantine "/Applications/FoS IPTV.app"
+open "/Applications/FoS IPTV.app"
+
+## Apple Silicon only
+
+The current v0.1.0 release asset is for Apple Silicon Macs only.
+
+Supported:
+
+- M1
+- M2
+- M3
+- M4
+
+Not supported by this asset:
+
+- Intel Macs
+
+To check your Mac type, run:
+
+uname -m
+
+Expected result for this release:
+
+arm64
 
 ## Features
 
@@ -43,46 +70,6 @@ You usually only need to do this once.
 - HTTP 884 provider/block diagnostics
 - Local-first storage
 - Credential masking
-
-## How to add an Xtream provider
-
-Use this only with a provider account you are legally allowed to access.
-
-1. Open FoS IPTV.
-2. Go to Sources.
-3. Choose Xtream login.
-4. Enter a source name.
-5. Paste your server/base URL or URLs into Server URL(s), one per line.
-6. Enter your Xtream username.
-7. Enter your Xtream password.
-8. Click Test connection.
-9. Review the diagnostic checklist.
-10. Click Connect & import.
-
-Example server URL format:
-
-http://example-server.com:8080
-http://backup-server.example:8080
-
-Do not post your real server URL, username, password, or playlist publicly.
-
-## How to add an M3U playlist
-
-1. Open FoS IPTV.
-2. Go to Sources.
-3. Choose M3U URL or Local M3U file.
-4. Enter or select your playlist.
-5. Click Import.
-
-Only use M3U playlists you are legally allowed to access.
-
-## How to add an XMLTV guide
-
-1. Open FoS IPTV.
-2. Go to Sources.
-3. Find the XMLTV / EPG import section.
-4. Enter your XMLTV URL or import your guide.
-5. Click Import.
 
 ## Important legal notice
 

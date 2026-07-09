@@ -1,26 +1,53 @@
-# FoS IPTV v0.1.0
+# FoS IPTV v0.1.0 — unsigned macOS test build
 
-Initial public release.
+This is the first public test release of FoS IPTV.
+
+Important: this is an unsigned and non-notarized macOS test build. It is meant for early testers before the app has full Apple Developer ID signing and notarization.
+
+## macOS damaged-app warning
+
+macOS may show this warning:
+
+"FoS IPTV" is damaged and can't be opened. You should move it to the Trash.
+
+That usually happens because this early GitHub build is not signed or notarized yet.
+
+After downloading and unzipping the app, run this in Terminal if the app is in Downloads:
+
+xattr -dr com.apple.quarantine "$HOME/Downloads/FoS IPTV.app"
+open "$HOME/Downloads/FoS IPTV.app"
+
+If you moved it to Applications, run:
+
+xattr -dr com.apple.quarantine "/Applications/FoS IPTV.app"
+open "/Applications/FoS IPTV.app"
+
+## Apple Silicon only
+
+This release asset is for Apple Silicon Macs only.
+
+Supported:
+
+- M1
+- M2
+- M3
+- M4
+
+This asset is not for Intel Macs.
+
+To check your Mac type, run:
+
+uname -m
+
+Expected result:
+
+arm64
+
+## What FoS IPTV is
 
 FoS IPTV is a free desktop IPTV player for users who already have their own legal IPTV playlist or Xtream-compatible provider account.
 
 FoS IPTV does not include channels, movies, series, playlists, provider access, subscriptions, usernames, passwords, or IPTV credentials.
-
-## First start
-
-1. Download the app.
-2. Extract or unzip it if needed.
-3. Open FoS IPTV.
-
-## macOS unsigned-app note
-
-This early build may be unsigned.
-
-If macOS blocks it:
-
-1. Right-click FoS IPTV.app.
-2. Choose Open.
-3. Confirm Open.
 
 ## Add your own Xtream account
 
@@ -54,7 +81,9 @@ Do not post your real server URL, username, or password publicly.
 
 ## Known limitations
 
-- Early unsigned build
+- Unsigned macOS test build
+- Not notarized yet
+- Apple Silicon only for this asset
 - Provider support varies
 - Some providers block M3U, VOD, or series endpoints
 - Language detection is conservative
