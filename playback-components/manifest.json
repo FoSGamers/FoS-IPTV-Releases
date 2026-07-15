@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "components": {
+    "ffmpeg": {
+      "mac-arm64": { "version": "8.1.2", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/ffmpeg-mac-arm64", "sha256": "eaf91238e104dd0e262bc6510e25061855cc99a6955a721b0ac99660d58c473d", "size": 65637248 },
+      "mac-x64":   { "version": "8.1.2", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/ffmpeg-mac-x64", "sha256": "1ca59dda73668c59898a0b305afd8a88817a989187f222ec62d64e775d614d23", "size": 93980912 },
+      "win-x64":   { "version": "8.1.2", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/ffmpeg-win-x64.exe", "sha256": "5fd0d72490c2e3fdc83b6de4b560b9375c88ed8a272aeedcf561908950b4d3a4", "size": 143919616 },
+      "linux-x64": { "version": "8.1.2", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/ffmpeg-linux-x64", "sha256": "7f432634c093dc44978e64df49d8434fbca91f2385fa8799888f51a5fb261c72", "size": 144906888 }
+    },
+    "ffprobe": {
+      "mac-arm64": { "version": "8.1.2", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/ffprobe-mac-arm64", "sha256": "ed9dc5871914b466b96b402c9ec0ba68ce4f836e72faa464b1b4e279835bd4a6", "size": 65445840 },
+      "mac-x64":   { "version": "8.1.2", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/ffprobe-mac-x64", "sha256": "bdb6aff0f1f414382effd97040f7862dc85e67996ac296cb4288beed0e06498f", "size": 93772560 },
+      "win-x64":   { "version": "8.1.2", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/ffprobe-win-x64.exe", "sha256": "315901a5950d037003faef06ef7a756e3214b181eaa229264e1fbf232e39f501", "size": 143712768 },
+      "linux-x64": { "version": "8.1.2", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/ffprobe-linux-x64", "sha256": "d9a375bcf1b1f8c3c3b8bfaf9810a18aa9176bfa6a5b4adb271bb5a53979d64c", "size": 144689672 }
+    },
+    "mpv": {
+      "win-x64": { "version": "0.41.0", "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/playback-components-v1/mpv-win-x64.exe", "sha256": "b0bb2dc1928e6d86cc26d950815c80c977440081e814c6a46e93f6e9e99c276d", "size": 117537280 }
+    }
+  }
+}
