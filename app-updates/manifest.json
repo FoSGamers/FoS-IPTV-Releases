@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "0.2.0",
+  "publishedAt": "2026-07-17T01:03:24.032Z",
+  "notesUrl": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/tag/v0.2.0",
+  "mandatory": false,
+  "platforms": {
+    "mac-arm64": {
+      "url": "https://github.com/FoSGamers/FoS-IPTV-Releases/releases/download/v0.2.0/FoS-IPTV-0.2.0-mac-arm64.dmg",
+      "sha256": "48ea1282d7544ddc704defde8fd291dc326d7bb5e94c3ae1767e675180eb3eab",
+      "size": 108200716,
+      "packageType": "dmg"
+    }
+  }
+}
